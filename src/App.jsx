@@ -3,10 +3,21 @@ import { useState, useEffect } from "react";
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 const defaultTenants = [
-  { id: 1, name: "Alice Morgan", unit: "1A", room: "101", amount: 1200, expiry: "2026-06-30" },
-  { id: 2, name: "Ben Carter",   unit: "2B", room: "205", amount: 1350, expiry: "2025-12-31" },
-  { id: 3, name: "Clara Lee",    unit: "3C", room: "312", amount: 1100, expiry: "2026-03-15" },
-  { id: 4, name: "David Osei",   unit: "4D", room: "408", amount: 1500, expiry: "2027-01-01" },
+  { id: 1772793791069, name: "Lorenz",                  unit: "EPK",  room: "1", amount: 2000, expiry: "2026-03-21" },
+  { id: 1772793836316, name: "Justin",                  unit: "EPK",  room: "2", amount: 1500, expiry: "2026-11-30" },
+  { id: 1772793883536, name: "Mathieu",                 unit: "EPK",  room: "3", amount: 1500, expiry: "2026-07-21" },
+  { id: 1772793920344, name: "Clarissa",                unit: "EPK",  room: "4", amount:  800, expiry: "2027-01-13" },
+  { id: 1772793952112, name: "Bala",                    unit: "EPK",  room: "5", amount: 1000, expiry: "2027-01-14" },
+  { id: 2000000000001, name: "Rajpal Suveer Kamaljeet", unit: "DPVB", room: "1", amount: 2200, expiry: "2026-04-22" },
+  { id: 2000000000002, name: "Chua Ker Yung",           unit: "DPVB", room: "5", amount:  950, expiry: "2026-06-27" },
+  { id: 2000000000003, name: "Li Junhao",               unit: "DPVB", room: "2", amount: 1600, expiry: "2026-09-25" },
+  { id: 2000000000004, name: "Hong Hanhua",             unit: "DPVB", room: "3", amount: 1400, expiry: "2026-10-10" },
+  { id: 2000000000005, name: "Do Manh Dung",            unit: "DPVB", room: "4", amount: 1000, expiry: "2026-11-06" },
+  { id: 2000000000006, name: "Vlasov Dmitrii",          unit: "DPVC", room: "2", amount: 1550, expiry: "2026-05-31" },
+  { id: 2000000000007, name: "Wang Peng",               unit: "DPVC", room: "3", amount: 1300, expiry: "2026-11-16" },
+  { id: 2000000000008, name: "Leong Siang Wai",         unit: "DPVC", room: "5", amount:  950, expiry: "2026-08-01" },
+  { id: 2000000000009, name: "Wei Yizhuo",              unit: "DPVC", room: "1", amount: 2200, expiry: "2026-08-08" },
+  { id: 2000000000010, name: "Liao Yizhen",             unit: "DPVC", room: "4", amount: 1000, expiry: "2026-08-23" },
 ];
 
 function getKey(month, year) { return `rental-${year}-${month}`; }
